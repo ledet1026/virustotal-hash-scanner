@@ -1,7 +1,6 @@
 import requests
 import json
 
-#send the hash file and te antivirus scan and give the report in json format 
 api_key=input("Enter your VirusTotal API key: ").strip()
 headers={
     "x-apikey":api_key
@@ -73,4 +72,5 @@ else:
                 hash(h)
                 print("-"*80)
     except FileNotFoundError:
+
         print("File hash.txt is not exist!")
